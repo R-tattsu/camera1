@@ -63,6 +63,7 @@ class EffectViewController: UIViewController {
         
         
         
+        
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
