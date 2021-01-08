@@ -60,6 +60,7 @@ class EffectViewController: UIViewController {
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
+        
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
