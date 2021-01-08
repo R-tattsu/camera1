@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F85D34F25A2EC2800919272 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F85D34E25A2EC2800919272 /* UIImageExtension.swift */; };
+		6F85D35225A352D300919272 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F85D35125A352D300919272 /* EffectViewController.swift */; };
 		6FEF34DE25A139E70078E185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF34DD25A139E70078E185 /* AppDelegate.swift */; };
 		6FEF34E025A139E70078E185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF34DF25A139E70078E185 /* SceneDelegate.swift */; };
 		6FEF34E225A139E70078E185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF34E125A139E70078E185 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F85D34E25A2EC2800919272 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		6F85D35125A352D300919272 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
 		6FEF34DA25A139E70078E185 /* camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEF34DD25A139E70078E185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FEF34DF25A139E70078E185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				6FEF34DF25A139E70078E185 /* SceneDelegate.swift */,
 				6FEF34E125A139E70078E185 /* ViewController.swift */,
 				6FEF34E325A139E70078E185 /* Main.storyboard */,
+				6F85D35125A352D300919272 /* EffectViewController.swift */,
+				6F85D34E25A2EC2800919272 /* UIImageExtension.swift */,
 				6FEF34E625A139E90078E185 /* Assets.xcassets */,
 				6FEF34E825A139E90078E185 /* LaunchScreen.storyboard */,
 				6FEF34EB25A139E90078E185 /* Info.plist */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F85D35225A352D300919272 /* EffectViewController.swift in Sources */,
 				6FEF34E225A139E70078E185 /* ViewController.swift in Sources */,
 				6FEF34DE25A139E70078E185 /* AppDelegate.swift in Sources */,
 				6FEF34E025A139E70078E185 /* SceneDelegate.swift in Sources */,
+				6F85D34F25A2EC2800919272 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.camera";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.camera20210104";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.camera";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.camera20210104";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
