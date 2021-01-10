@@ -35,9 +35,32 @@ class EffectViewController: UIViewController {
     
     @IBOutlet weak var effectImage: UIImageView!
     
+    let filterArray = ["CIPhotoEffectMono",
+                       "CIPhotoEffectChrome",
+                       "CIPhotoEffectFade",
+                       "CIPhotoEffectInstant",
+                       "CIPhotoEffectNoir",
+                       "CIPhotoEffectProcess",
+                       "CIPhotoEffectTonal",
+                       "CIPhotoEffectTransfer",
+                       "CISepiaTone",
+    ]
+    
+    var fillterSelectNuber = 0
+    
+    
+    
+    
+    
     @IBAction func effectButtonAction(_ sender: Any) {
         if let image = originalImage {
-            let filterName = "CIPhotoEffectMono"
+            let filterName = filterArray[fillterSelectNuber]
+            
+            fillterSelectNuber += 1
+            if fillterSelectNuber == filterArray.count {
+                fillterSelectNuber = 0
+            }
+            
             let rotate = image.imageOrientation
             let inputImage = CIImage(image: image)
             guard let effectFilter = CIFilter(name: filterName) else {
@@ -60,8 +83,17 @@ class EffectViewController: UIViewController {
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
-        
-        
+        // 表示画像をアンラップしてシェア画像を取り出す
+        if let shareImage = effectImage.image{
+            // UIActivityViewControllerに渡す配列を作成
+            let shareItems = [shareImage]
+            // UIActivityViewControllerにシェア画像を渡す
+            let controller = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+            // iPadで落ちてしまう対策
+            controller.popoverPresentationController?.sourceView = view
+            // UIActivityViewControllerを表示
+            present(controller, animated: true, completion: nil)
+        }
         
         
     }
